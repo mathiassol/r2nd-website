@@ -5,7 +5,7 @@ import Link from "next/link";
 
 // ===================================================
 // PUT YOUR DOWNLOAD LINK HERE
-const DOWNLOAD_URL = "http://files.r2nd.org/installers/r2nd_setup.exe";
+const DOWNLOAD_URL = "https://files.r2nd.org/installers/r2nd_setup.exe";
 // ===================================================
 
 export default function DownloadPage() {
