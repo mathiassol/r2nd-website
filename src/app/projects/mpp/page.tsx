@@ -153,7 +153,7 @@ export default function MppPage() {
             Read Documentation
           </Link>
           <a
-            href="https://github.com/R2ND"
+            href="https://github.com/mathiassol/mpp"
             target="_blank"
             rel="noopener noreferrer"
             className="px-6 py-3 rounded-lg border border-border hover:border-border-hover text-text-primary font-medium text-sm transition-all hover:bg-surface flex items-center gap-2"

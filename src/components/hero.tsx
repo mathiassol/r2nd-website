@@ -64,7 +64,7 @@ export function Hero() {
                 View Projects
               </Link>
               <a
-                href="https://github.com/R2ND"
+                href="https://github.com/mathiassol/r2nd"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-6 py-3 rounded-lg border border-border hover:border-border-hover text-text-secondary hover:text-text-primary font-medium text-sm transition-all hover:bg-surface flex items-center gap-2"

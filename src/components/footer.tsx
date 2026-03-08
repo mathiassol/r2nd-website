@@ -15,7 +15,7 @@ const footerLinks = {
     { label: "Download", href: "/download" },
   ],
   Community: [
-    { label: "GitHub", href: "https://github.com/R2ND" },
+    { label: "GitHub", href: "https://github.com/mathiassol/r2nd" },
     { label: "Contributing", href: "/docs" },
   ],
 };

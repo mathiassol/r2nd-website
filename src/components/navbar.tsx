@@ -39,7 +39,7 @@ export function Navbar() {
             </Link>
           ))}
           <a
-            href="https://github.com/R2ND"
+            href="https://github.com/mathiassol/r2nd"
             target="_blank"
             rel="noopener noreferrer"
             className="text-sm text-text-secondary hover:text-text-primary transition-colors font-medium flex items-center gap-1.5"
@@ -88,7 +88,7 @@ export function Navbar() {
                 </Link>
               ))}
               <a
-                href="https://github.com/R2ND"
+                href="https://github.com/mathiassol/r2nd"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-sm text-text-secondary hover:text-text-primary transition-colors font-medium"

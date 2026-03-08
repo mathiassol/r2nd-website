@@ -46,7 +46,7 @@ export function DeveloperSection() {
                 transition={{ delay: 0.3 }}
               >
                 <a
-                  href="https://github.com/R2ND"
+                  href="https://github.com/mathiassol/r2nd"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-accent hover:bg-accent-hover text-white font-medium text-sm transition-all shadow-sm"
@@ -79,7 +79,7 @@ export function DeveloperSection() {
               <div>
                 <span className="text-text-muted">$</span>{" "}
                 <span className="text-text-primary">git clone</span>{" "}
-                <span className="text-text-secondary">https://github.com/R2ND/r2nd</span>
+                <span className="text-text-secondary">https://github.com/mathiassol/r2nd</span>
               </div>
               <div>
                 <span className="text-text-muted">$</span>{" "}

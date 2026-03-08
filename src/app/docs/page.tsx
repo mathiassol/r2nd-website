@@ -105,7 +105,7 @@ export default function DocsPage() {
               <div>
                 <span className="text-text-secondary">$</span>{" "}
                 <span className="text-text-primary">git clone</span>{" "}
-                <span className="text-text-primary">https://github.com/R2ND/r2nd</span>
+                <span className="text-text-primary">https://github.com/mathiassol/r2nd</span>
               </div>
               <div>
                 <span className="text-text-secondary">$</span>{" "}
@@ -169,7 +169,7 @@ export default function DocsPage() {
           <p className="text-text-secondary">
             Documentation is actively being written. Want to help?{" "}
             <a
-              href="https://github.com/R2ND"
+              href="https://github.com/mathiassol/r2nd"
               target="_blank"
               rel="noopener noreferrer"
               className="text-accent hover:underline font-medium"
