@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { ThemeToggle } from "@/components/theme-toggle";
 
 const navLinks = [
   { href: "/docs", label: "Docs" },
@@ -48,6 +49,7 @@ export function Navbar() {
             </svg>
             GitHub
           </a>
+          <ThemeToggle />
         </div>
 
         {/* Mobile toggle */}
@@ -94,6 +96,9 @@ export function Navbar() {
               >
                 GitHub
               </a>
+              <div className="pt-2 border-t border-border">
+                <ThemeToggle />
+              </div>
             </div>
           </motion.div>
         )}
