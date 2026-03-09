@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -19,9 +20,7 @@ export function Navbar() {
     <nav className="fixed top-0 left-0 right-0 z-50 border-b border-border bg-background/90 backdrop-blur-xl">
       <div className="mx-auto max-w-7xl px-6 h-16 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-3 group">
-          <div className="w-8 h-8 rounded-lg bg-accent text-white flex items-center justify-center font-mono font-bold text-sm">
-            R2
-          </div>
+          <Image src="/logo.svg" alt="R2ND" width={32} height={32} className="w-8 h-8" />
           <span className="font-semibold text-lg tracking-tight text-text-primary">
             R2ND
           </span>

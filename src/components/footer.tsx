@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const footerLinks = {
@@ -28,9 +29,7 @@ export function Footer() {
           {/* Brand */}
           <div className="col-span-2 md:col-span-1">
             <Link href="/" className="flex items-center gap-3">
-              <div className="w-8 h-8 rounded-lg bg-accent text-white flex items-center justify-center font-mono font-bold text-sm">
-                R2
-              </div>
+              <Image src="/logo.svg" alt="R2ND" width={32} height={32} className="w-8 h-8" />
               <span className="font-semibold text-lg tracking-tight">
                 R2ND
               </span>
