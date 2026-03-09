@@ -20,7 +20,7 @@ export function Hero() {
           </motion.div>
 
           <motion.h1
-            className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.1]"
+            className="text-[64px] font-medium leading-[77px] tracking-tight"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
@@ -30,7 +30,7 @@ export function Hero() {
           </motion.h1>
 
           <motion.p
-            className="mt-6 text-lg md:text-xl text-text-secondary max-w-2xl mx-auto leading-relaxed"
+            className="mt-6 text-[20px] font-light leading-[30px] text-text-secondary max-w-2xl mx-auto"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
