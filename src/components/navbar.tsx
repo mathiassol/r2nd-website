@@ -18,10 +18,10 @@ export function Navbar() {
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 border-b border-border bg-background/90 backdrop-blur-xl">
-      <div className="mx-auto max-w-7xl px-6 h-16 flex items-center justify-between">
+      <div className="mx-auto max-w-7xl px-6 h-[70px] flex items-center justify-between">
         <Link href="/" className="flex items-center gap-3 group">
-          <Image src="/logo.svg" alt="R2ND" width={32} height={32} className="w-8 h-8" />
-          <span className="font-semibold text-lg tracking-tight text-text-primary">
+          <Image src="/logo.svg" alt="R2ND" width={35} height={35} className="w-[35px] h-[35px]" />
+          <span className="font-semibold text-xl tracking-tight text-text-primary">
             R2ND
           </span>
         </Link>
