@@ -12,30 +12,30 @@ const stackLayers = [
   {
     name: "R2ND Desktop",
     desc: "Window management and OS integration layer",
-    color: "bg-purple-500/10 border-purple-500/20",
+    color: "bg-accent/10 border-accent/20",
   },
   {
     name: "UI · Renderer · Networking",
     desc: "Interface framework, 3D graphics engine, and communication stack",
-    color: "bg-emerald-500/10 border-emerald-500/20",
+    color: "bg-accent-soft/30 border-accent-soft/40",
   },
   {
     name: "Core Libraries",
     desc: "Standard library: data structures, I/O, math, file system, and utilities",
-    color: "bg-yellow-500/10 border-yellow-500/20",
+    color: "bg-accent-soft/20 border-accent-soft/30",
   },
   {
     name: "M++ Language",
     desc: "Statically-typed, LLVM-compiled systems language — the foundation of everything",
-    color: "bg-blue-500/10 border-blue-500/20",
+    color: "bg-surface border-border",
   },
 ];
 
 const projectStatus = [
-  { name: "M++", status: "Active", color: "text-emerald-500 bg-emerald-500/10 border-emerald-500/20" },
-  { name: "Core Libraries", status: "Active", color: "text-emerald-500 bg-emerald-500/10 border-emerald-500/20" },
-  { name: "R2ND UI", status: "In Progress", color: "text-yellow-500 bg-yellow-500/10 border-yellow-500/20" },
-  { name: "3D Renderer", status: "In Progress", color: "text-yellow-500 bg-yellow-500/10 border-yellow-500/20" },
+  { name: "M++", status: "Active", color: "text-accent bg-accent/10 border-accent/20" },
+  { name: "Core Libraries", status: "Active", color: "text-accent bg-accent/10 border-accent/20" },
+  { name: "R2ND UI", status: "In Progress", color: "text-accent-hover bg-accent-soft/30 border-accent-soft/40" },
+  { name: "3D Renderer", status: "In Progress", color: "text-accent-hover bg-accent-soft/30 border-accent-soft/40" },
   { name: "R2ND Networking", status: "Planning", color: "text-text-muted bg-surface border-border" },
   { name: "R2ND Desktop", status: "Planning", color: "text-text-muted bg-surface border-border" },
   { name: "R2ND Tools", status: "Planning", color: "text-text-muted bg-surface border-border" },

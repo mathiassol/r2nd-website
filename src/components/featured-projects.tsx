@@ -50,7 +50,7 @@ const projects = [
 
 const statusColors: Record<string, string> = {
   Active: "text-accent bg-accent/10 border-accent/20",
-  "In Progress": "text-amber-600 bg-amber-50 border-amber-200",
+  "In Progress": "text-accent bg-accent/10 border-accent/20",
   Planning: "text-text-muted bg-surface border-border",
 };
 
