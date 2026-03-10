@@ -404,7 +404,7 @@ export default function MppPage() {
                 <p className="text-[10px] font-mono text-text-muted uppercase tracking-wider mb-2">
                   Results
                 </p>
-                <div className="space-y-0.5 max-h-[40vh] overflow-y-auto">
+                <div className="space-y-0.5">
                   {pagedResults.map((r, i) => {
                     const globalIdx = resultPage * RESULTS_PER_PAGE + i;
                     return (
@@ -448,25 +448,24 @@ export default function MppPage() {
               </div>
             )}
 
-            <p className="text-[10px] font-mono text-text-muted uppercase tracking-wider mb-2">
-              Contents
-            </p>
-            <nav className="space-y-0.5">
-              {tocItems.map((item) => (
-                <a
-                  key={item.id}
-                  href={`#${item.id}`}
-                  className="flex items-center justify-between text-[13px] text-text-secondary hover:text-accent transition-colors py-1"
-                >
-                  <span className="truncate">{item.label}</span>
-                  {isSearching && sectionHitCounts.has(item.id) && (
-                    <span className="text-[10px] font-mono text-accent ml-1 shrink-0">
-                      {sectionHitCounts.get(item.id)}
-                    </span>
-                  )}
-                </a>
-              ))}
-            </nav>
+            {!isSearching && (
+              <>
+                <p className="text-[10px] font-mono text-text-muted uppercase tracking-wider mb-2">
+                  Contents
+                </p>
+                <nav className="space-y-0.5">
+                  {tocItems.map((item) => (
+                    <a
+                      key={item.id}
+                      href={`#${item.id}`}
+                      className="flex items-center justify-between text-[13px] text-text-secondary hover:text-accent transition-colors py-1"
+                    >
+                      <span className="truncate">{item.label}</span>
+                    </a>
+                  ))}
+                </nav>
+              </>
+            )}
           </div>
         </aside>
 
