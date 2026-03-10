@@ -15,6 +15,16 @@ const NAV_SECTIONS = [
   { id: "cli-reference", label: "CLI Reference" },
 ];
 
+const SUB_DOCS = [
+  {
+    href: "/docs/mpp",
+    title: "M++ Language Reference",
+    description: "Complete language spec — types, control flow, structs, enums, traits, generics, FFI, memory management, and more.",
+    badge: "21 sections",
+    icon: "📖",
+  },
+];
+
 function CodeBlock({ children }: { children: string }) {
   return (
     <div className="code-block">
@@ -72,6 +82,38 @@ export default function DocsPage() {
           <p className="mt-4 text-text-secondary text-lg max-w-2xl leading-relaxed">
             Everything you need to build with the R2ND ecosystem — from installation to shipping a full UI app.
           </p>
+        </div>
+
+        {/* ─── Reference Docs Cards ─── */}
+        <div className="mb-12">
+          <h2 className="text-lg font-semibold text-text-primary mb-4">Reference Documentation</h2>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {SUB_DOCS.map((doc) => (
+              <Link
+                key={doc.href}
+                href={doc.href}
+                className="group rounded-xl border border-border bg-card hover:bg-card-hover hover:border-border-hover transition-all p-5"
+              >
+                <div className="flex items-start gap-3">
+                  <span className="text-2xl">{doc.icon}</span>
+                  <div className="min-w-0">
+                    <div className="flex items-center gap-2 mb-1">
+                      <span className="font-semibold text-text-primary group-hover:text-accent transition-colors">
+                        {doc.title}
+                      </span>
+                      <span className="text-[11px] font-mono px-1.5 py-0.5 rounded bg-surface text-text-muted border border-border">
+                        {doc.badge}
+                      </span>
+                    </div>
+                    <p className="text-sm text-text-secondary leading-relaxed">{doc.description}</p>
+                    <span className="inline-flex items-center gap-1 mt-3 text-sm text-accent font-medium">
+                      Open reference →
+                    </span>
+                  </div>
+                </div>
+              </Link>
+            ))}
+          </div>
         </div>
 
         {/* Mobile nav — horizontal scrollable */}
@@ -254,6 +296,20 @@ import "r2nd-ui"`}</CodeBlock>
             {/* ─── 6. M++ Language ─── */}
             <section id="mpp-language">
               <h2 className="text-2xl font-bold tracking-tight mb-4">M++ Language</h2>
+
+              <div className="rounded-xl border border-accent/30 bg-accent-soft p-5 mb-6">
+                <p className="text-sm text-text-secondary">
+                  <span className="font-semibold text-text-primary">Looking for the full reference?</span>{" "}
+                  The complete M++ language documentation with search, 21 sections, and comprehensive examples is at{" "}
+                  <Link href="/docs/mpp" className="text-accent hover:underline font-medium">
+                    M++ Language Reference →
+                  </Link>
+                </p>
+              </div>
+
+              <p className="text-text-secondary leading-relaxed mb-4">
+                Quick overview of the language:
+              </p>
 
               <h3 className="text-lg font-semibold mt-6 mb-3">Variables &amp; Types</h3>
               <CodeBlock>{`let name = "R2ND";
