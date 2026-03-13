@@ -22,7 +22,7 @@ export default function MppPage() {
             Home
           </Link>
           <span>/</span>
-          <Link href="/projects/mpp" className="hover:text-text-primary transition-colors">
+          <Link href="/projects" className="hover:text-text-primary transition-colors">
             Projects
           </Link>
           <span>/</span>

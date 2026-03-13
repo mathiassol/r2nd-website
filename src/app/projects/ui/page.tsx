@@ -20,6 +20,8 @@ export default function UIPage() {
         <div className="flex items-center gap-2 text-sm text-text-secondary mb-8">
           <Link href="/" className="hover:text-text-primary transition-colors">Home</Link>
           <span>/</span>
+          <Link href="/projects" className="hover:text-text-primary transition-colors">Projects</Link>
+          <span>/</span>
           <span className="text-text-primary">R2ND UI</span>
         </div>
 
